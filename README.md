@@ -1,7 +1,7 @@
 # Lounges_Shannon_Fip
 
 ## Description
-Bluesteel Beer is a Brewery that specializes in making the world's first anti-chafe beer. What is anti-chafe? It's a product mostly used by athletes to ensure that they are comfortable while performing their various sports in whatever they are wearing. So what is anti-chafe beer? It's the first beer in the world that will provide the same sensation as any anti-chafe cream when it is drank. This is why it is every athlete's favourite beer.
+Bluesteel Beer is a Brewery that specializes in making the world's first anti-chafe beer. What is anti-chafe? It's a product in the form of a cream mostly used by athletes to ensure that they are comfortable while performing their various sports in whatever they are wearing. So what is anti-chafe beer? It's the first beer in the world that will provide the same sensation as any anti-chafe cream when it is drank. This is why it is every athlete's favourite beer.
 
 ## MIT Liscence
 
