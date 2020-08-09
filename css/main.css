@@ -7,8 +7,8 @@
 }
 body{
   font-family: Los Feliz Ot;
-  background-color: #231D1D;
-  color: white;
+  background-color: white;
+  color: black;
 }
 nav{
   background: #2F2828;
@@ -25,6 +25,7 @@ label.logo{
 nav ul{
   float: right;
   margin-right: 20px;
+  z-index: 9999;
 }
 nav ul li{
   display: inline-block;
@@ -39,7 +40,7 @@ nav ul li a{
   text-transform: uppercase;
 }
 a.active,a:hover{
-  background: #1b9bff;
+  color: grey;
   transition: .5s;
 }
 .checkbtn{
@@ -87,7 +88,7 @@ a.active,a:hover{
   }
   a:hover,a.active{
     background: none;
-    color: #0082e6;
+    color: #6A6161;
   }
   #check:checked ~ ul{
     left: 0;
@@ -189,5 +190,6 @@ a.active,a:hover{
   to {opacity: 1}
 }
 
-
- 
+.home-page-images{
+  color: black;
+ }
