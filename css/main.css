@@ -18,6 +18,25 @@ body section div img{
 }
 body{
   color: lightgrey; 
+
+}
+
+button{
+  background-color: #707070;
+  font-size: 15px;
+}
+
+button:hover{
+  background-color: grey;
+}
+
+h1{
+  padding-top: 100px;
+  font-size: 60px;
+}
+
+video{
+  max-width: 100%;
 }
 .clear {
   clear: both;
@@ -42,6 +61,7 @@ label.logo{
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+  font-family: Los Feliz Ot;
 }
 nav ul{
   float: right;
@@ -60,7 +80,6 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
-
 
 a.active,a:hover{
   color: grey;
@@ -124,7 +143,40 @@ section.our-story-lower img{
   display: block;
   margin: 0 auto 2em;
 }
-
+section.footer-nav {
+  margin-top: 1em;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1em;
+}
+ul.footer-nav {
+  display: flex;
+  margin-bottom: 1em;
+}
+ul.footer-nav li {
+  flex: 1;
+}
+ul.footer-nav li a {
+  color: rgba(255,255,255,0.4) !important;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  border-radius: 2px;
+}
+.footer-nav .social {
+  margin: 0 auto 1em;
+  position: relative;
+  width: 8em;
+}
+.footer-nav .social i {
+  font-size: 30px;
+  color: black;
+}
+main.home > video {
+  width: 75%;
+  margin: 1em auto;
+  display: block;
+}
 @media (max-width: 990px){
   label.logo{
     font-size: 30px;
@@ -271,4 +323,67 @@ section.our-story-lower img{
   color: lightgrey;
  }
 
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+ 
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
