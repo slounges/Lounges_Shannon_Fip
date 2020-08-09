@@ -35,6 +35,9 @@ h1{
   font-size: 60px;
 }
 
+h4{
+  color: gold;
+}
 video{
   max-width: 100%;
 }
