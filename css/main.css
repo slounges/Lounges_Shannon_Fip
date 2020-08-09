@@ -13,15 +13,23 @@ html{
   font-family: Arial, Helvetica, sans-serif;
 }
 body section div img{
-  width: 100%;
+  max-width: 100%;
   color: lightgrey;
 }
 body{
   color: lightgrey; 
 }
-
+.clear {
+  clear: both;
+}
+body.our-story {
+  font-size: 20px;
+}
 main{
   font-size: 20pt;
+}
+section.main{
+  display: flex;
 }
 nav{
   background: #2F2828;
@@ -71,21 +79,53 @@ a.active,a:hover{
   display: none;
 }
 
+main.home section.main > section{
+  flex: 0.8 1;
+}
+
 section div.images{
-  margin: 10em 4em;
+  margin: 3em 0.5em;
   position: relative;
+}
+section.home-page-mid{
+  margin: 6em 0.5em;
+  flex: 1;
+}
+div.images img{
+  border: 3px solid rgba(255,255,255,0.5);
 }
 div.images .caption{
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 80px; 40px;
+  padding: 80px 40px;
   text-shadow: 0 0 2px black;
-  border: white;
 }
  
+section.our-story-images *{
+  margin: 0.5em;
+}
+section.our-story-images p{
+  padding: 1em;
+  font-size: 20px;
+}
+hr{
+  margin: 4em 10em;
+  border-top: 3px solid rgba(255,255,255,0.5);
+}
+section.our-story-images img{
+  float: left;
+  width: 48%;
+}
+section.our-story-images div.image-2 img{
+  float: right;
+}
+section.our-story-lower img{
+  display: block;
+  margin: 0 auto 2em;
+}
 
-@media (max-width: 952px){
+@media (max-width: 990px){
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -93,8 +133,6 @@ div.images .caption{
   nav ul li a{
     font-size: 16px;
   }
-}
-@media (max-width: 858px){
   .checkbtn{
     display: block;
   }
@@ -123,10 +161,19 @@ div.images .caption{
   #check:checked ~ ul{
     left: 0;
   }
+  main.home{
+    display: block;
+  }
+  main section > section{
+    flex: none !important;
+    width: 100%;
+  }
+  section.our-story-images img{
+    float: none;
+    width: 98%;
+    margin 0 auto;
+  }
 }
-
-
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
